@@ -57,7 +57,7 @@ def machine(plato_text, config, **kwargs):
         try:
             import castor_pollux
         except ImportError:
-            print("To use Gemini, install the package with the feature enabled: \n pip install \"Name-of-the-Machine[gemini]\"", file=sys.stderr)
+            print("To use Gemini, install the package with the feature enabled: \n pip install \"managing-machine[gemini]\"", file=sys.stderr)
             sys.exit(1)
             
         thoughts, text = castor_pollux.respond(
@@ -79,7 +79,7 @@ def machine(plato_text, config, **kwargs):
         try:
             import electroid
         except ImportError:
-            print("To use Anthropic, install the package with the feature enabled: \n pip install \"Name-of-the-Machine[anthropic]\"", file=sys.stderr)
+            print("To use Anthropic, install the package with the feature enabled: \n pip install \"managing-machine[anthropic]\"", file=sys.stderr)
             sys.exit(1)
             
         text, thoughts = electroid.respond(

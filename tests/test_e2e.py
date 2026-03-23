@@ -14,14 +14,14 @@ def test_uvx_integration():
     
     input_text = "Theodotos-Alexandreus: Are language models seeking the Truth, machine?\n"
     
-    # "uvx --from . Name-of-the-Machine" behaves identically to PyPI "uvx Name-of-the-Machine"
+    # "uvx --from . managing-machine" behaves identically to PyPI "uvx managing-machine"
     cmd = [
         "uvx", 
         "--with",
         ".[all]",
         "--from", 
         ".", 
-        "Name-of-the-Machine"
+        "managing-machine"
     ]
     
     # The keys/tokens are passed through the environment automatically via env=env.

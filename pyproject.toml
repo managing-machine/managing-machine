@@ -3,13 +3,13 @@ requires = ["uv_build>=0.10.9,<0.11.0"]
 build-backend = "uv_build"
 
 [project]
-name = "name-of-the-machine"
+name = "managing-machine"
 version = "0.0.1"
 authors = [
     {name="Machina Ratiocinatrix", email="machina.ratio@gmail.com"},
     {name="Alexander Fedotov", email="alex.fedotov@aol.com"}
 ]
-description = "Description of the Machine"
+description = "A Machine that manages machines."
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers=[
@@ -17,7 +17,7 @@ classifiers=[
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
 ]
-keywords = ["name-of-the-machine"]
+keywords = ["managing-machine"]
 dependencies = [
     "opehaina >= 0.0.5",
     "PyGithub >= 2.6.1",
@@ -34,10 +34,10 @@ anthropic = ["electroid >= 0.0.19"]
 all = ["castor-pollux >= 0.1.4", "electroid >= 0.0.19"]
 
 [project.scripts]
-name-of-the-machine = "name_of_the_machine.cli:run"
+managing-machine = "managing_machine.cli:run"
 
 [project.urls]
-"Homepage" = "https://github.com/name-of-the-machine/name-of-the-machine"
+"Homepage" = "https://github.com/managing-machine/managing-machine"
 
 [dependency-groups]
 dev = ["pytest>=8.0.0"]
