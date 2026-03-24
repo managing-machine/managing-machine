@@ -12,7 +12,7 @@ def test_uvx_integration():
     # We know the environment variables are already in the computer
     # So we don't need to mock them; we just execute the real thing.
     
-    input_text = "Theodotos-Alexandreus: What other machines should participate in this discussion, Machine?\n"
+    input_text = "Theodotos-Alexandreus: What other machines should participate, machine?\n"
     
     # "uvx --from . managing-machine" behaves identically to PyPI "uvx managing-machine"
     cmd = [
@@ -38,7 +38,7 @@ def test_uvx_integration():
     
     # The output should contain our original input
     assert "Theodotos-Alexandreus:" in result.stdout
-    assert "What other machines should participate in this discussion, Machine?" in result.stdout
+    assert "What other machines should participate, machine?" in result.stdout
     
     # The Machine string should be present, indicating it replied back and added to the transcript
     # (Since it is appending it to the bottom, the stdout length > input length)
